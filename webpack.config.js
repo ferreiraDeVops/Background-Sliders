@@ -3,8 +3,10 @@ const path = require('path')
 module.exports = {
         devServer: {
                 static: {
-                        directory: path.resolve(__dirname,'dist')
-                }
+                  directory: path.resolve(__dirname, 'dist'),
+                },
+                compress: true,
+                port: 8000
         },
         entry: {
                 index: "./src/js/index.js"
@@ -20,6 +22,8 @@ module.exports = {
                 }]
         },
         output: {
-                filename: "[name].min.js"
+                path: path.resolve(__dirname,'dist'),
+                filename: "[name].min.js",
+                publicPath: '/',
         }
 }

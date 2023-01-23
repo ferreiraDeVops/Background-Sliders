@@ -4,7 +4,8 @@
   "description": "HTML5 | CSS3 | JavaScript",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
